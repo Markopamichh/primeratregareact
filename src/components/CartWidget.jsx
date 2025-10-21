@@ -4,9 +4,9 @@ const CartWidget = () => {
     const [cartCount, setCartCount] = useState(0);
 
     return (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <div>
             🛒
-            <span>{cartCount}</span>
+            <span>carrito</span>
         </div>
     );
 };
