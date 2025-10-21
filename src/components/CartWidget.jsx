@@ -1,12 +1,14 @@
+import { useState } from 'react';
+
 const CartWidget = () => {
-    const itemCount = 3;
+    const [cartCount, setCartCount] = useState(0);
 
     return (
-        <div className="cart-widget">
-            <ShoppingCart size={24} className="cart-icon" />
-            <span className="cart-badge">
-                {itemCount}
-            </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            🛒
+            <span>{cartCount}</span>
         </div>
     );
 };
+
+export default CartWidget;
