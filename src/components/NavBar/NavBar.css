@@ -1,0 +1,57 @@
+/* Estilos para NavBar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.navbar-logo:hover {
+  opacity: 0.8;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  padding: 8px 12px;
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.navbar-link:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .navbar-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+  }
+}

@@ -1,0 +1,121 @@
+/* Estilos para ItemDetail */
+.item-detail-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: var(--spacing-lg);
+  display: flex;
+  gap: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bg-primary);
+}
+
+@media (max-width: 768px) {
+  .item-detail-container {
+    flex-direction: column;
+  }
+}
+
+.item-detail-image-container {
+  flex: 1;
+}
+
+.item-detail-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.item-detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.item-detail-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--color-text-primary);
+}
+
+.item-detail-category {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.item-detail-price {
+  font-size: var(--font-size-2xl);
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 10px 0;
+}
+
+.item-detail-description {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: #555;
+}
+
+.item-detail-stock-box {
+  padding: 15px;
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius-sm);
+}
+
+.item-detail-stock-text {
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  margin: 0;
+}
+
+.item-detail-stock-text.in-stock {
+  color: var(--color-success);
+}
+
+.item-detail-stock-text.out-of-stock {
+  color: var(--color-danger);
+}
+
+.item-detail-actions {
+  margin-top: var(--spacing-lg);
+}
+
+.item-detail-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-detail-link {
+  display: inline-block;
+  padding: 12px 24px;
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-size-base);
+  transition: background-color var(--transition-fast);
+}
+
+.item-detail-link.cart {
+  background-color: var(--color-success);
+}
+
+.item-detail-link.cart:hover {
+  background-color: var(--color-success-hover);
+}
+
+.item-detail-link.continue {
+  background-color: var(--color-primary);
+}
+
+.item-detail-link.continue:hover {
+  background-color: var(--color-primary-hover);
+}

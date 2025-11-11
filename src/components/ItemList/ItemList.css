@@ -1,0 +1,15 @@
+/* Estilos para ItemList */
+.item-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .item-list-grid {
+    grid-template-columns: 1fr;
+  }
+}

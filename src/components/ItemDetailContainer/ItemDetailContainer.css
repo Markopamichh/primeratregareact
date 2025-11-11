@@ -1,0 +1,25 @@
+/* Estilos para ItemDetailContainer */
+.item-detail-container-loading,
+.item-detail-container-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.item-detail-container-loading {
+  font-size: 20px;
+  color: var(--color-text-secondary);
+}
+
+.item-detail-container-error {
+  flex-direction: column;
+  font-size: 18px;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.item-detail-container-error h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-danger);
+}

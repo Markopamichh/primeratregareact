@@ -1,0 +1,45 @@
+/* Estilos para NotFound */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.not-found-code {
+  font-size: 72px;
+  margin: 0;
+  color: var(--color-danger);
+  font-weight: bold;
+}
+
+.not-found-title {
+  font-size: var(--font-size-2xl);
+  margin: var(--spacing-lg) 0;
+  color: var(--color-text-primary);
+}
+
+.not-found-message {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin-bottom: 30px;
+}
+
+.not-found-link {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  transition: background-color var(--transition-fast);
+}
+
+.not-found-link:hover {
+  background-color: var(--color-primary-hover);
+}

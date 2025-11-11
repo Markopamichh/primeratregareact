@@ -1,0 +1,67 @@
+/* Estilos para Item */
+.item-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: pointer;
+  max-width: 300px;
+  background-color: var(--color-bg-primary);
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: 10px;
+}
+
+.item-name {
+  margin: 10px 0;
+  font-size: 18px;
+  color: var(--color-text-primary);
+}
+
+.item-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 10px 0;
+}
+
+.item-stock {
+  font-size: var(--font-size-sm);
+  margin: 10px 0;
+}
+
+.item-stock.in-stock {
+  color: var(--color-success);
+}
+
+.item-stock.out-of-stock {
+  color: var(--color-danger);
+}
+
+.item-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color var(--transition-fast);
+}
+
+.item-link:hover {
+  background-color: var(--color-primary-hover);
+}
