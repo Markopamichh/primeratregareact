@@ -6,7 +6,7 @@ export const products = [
     price: 899.99,
     stock: 10,
     description: "Notebook Dell Inspiron 15 con procesador Intel Core i5, 8GB RAM, 256GB SSD. Ideal para trabajo y estudio.",
-    image: "https://via.placeholder.com/300x200?text=Dell+Inspiron+15"
+    
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const products = [
     price: 799.99,
     stock: 8,
     description: "HP Pavilion con pantalla de 14 pulgadas, procesador AMD Ryzen 5, 16GB RAM, 512GB SSD.",
-    image: "https://via.placeholder.com/300x200?text=HP+Pavilion"
+    
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const products = [
     price: 1199.99,
     stock: 5,
     description: "MacBook Air con chip M2, 8GB RAM, 256GB SSD. Diseño ultraligero y batería de larga duración.",
-    image: "https://via.placeholder.com/300x200?text=MacBook+Air"
+    
   },
   {
     id: 4,
@@ -33,7 +33,6 @@ export const products = [
     price: 99.99,
     stock: 25,
     description: "Mouse inalámbrico ergonómico con sensor de alta precisión y batería recargable.",
-    image: "https://via.placeholder.com/300x200?text=Logitech+MX+Master"
   },
   {
     id: 5,
@@ -42,7 +41,7 @@ export const products = [
     price: 129.99,
     stock: 15,
     description: "Teclado mecánico gaming con switches mecánicos, iluminación RGB personalizable.",
-    image: "https://via.placeholder.com/300x200?text=Teclado+Mecanico"
+
   },
   {
     id: 6,
@@ -51,7 +50,6 @@ export const products = [
     price: 79.99,
     stock: 20,
     description: "Webcam Full HD 1080p con enfoque automático y micrófono dual estéreo.",
-    image: "https://via.placeholder.com/300x200?text=Webcam+C920"
   },
   {
     id: 7,
@@ -59,8 +57,7 @@ export const products = [
     category: "monitores",
     price: 449.99,
     stock: 12,
-    description: "Monitor 4K UHD de 27 pulgadas con tecnología IPS y HDR10.",
-    image: "https://via.placeholder.com/300x200?text=Samsung+27+4K"
+    description: "Monitor 4K UHD de 27 pulgadas con tecnología IPS y HDR10.", 
   },
   {
     id: 8,
@@ -69,7 +66,7 @@ export const products = [
     price: 599.99,
     stock: 7,
     description: "Monitor ultrawide curvo de 34 pulgadas, resolución QHD, ideal para productividad.",
-    image: "https://via.placeholder.com/300x200?text=LG+UltraWide"
+    
   },
   {
     id: 9,
@@ -78,7 +75,7 @@ export const products = [
     price: 349.99,
     stock: 18,
     description: "Auriculares inalámbricos con cancelación de ruido líder en la industria.",
-    image: "https://via.placeholder.com/300x200?text=Sony+WH1000XM5"
+    
   },
   {
     id: 10,
@@ -87,7 +84,7 @@ export const products = [
     price: 129.99,
     stock: 30,
     description: "Parlante Bluetooth portátil resistente al agua con sonido potente.",
-    image: "https://via.placeholder.com/300x200?text=JBL+Flip+6"
+    
   }
 ];
 
@@ -96,7 +93,7 @@ export const getProducts = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(products);
-    }, 1500); // Simula un delay de 1.5 segundos
+    }, 1500);
   });
 };
 
