@@ -4,6 +4,7 @@ import { getProducts, getProductsByCategory } from "../../data/products";
 import ItemList from "../ItemList/ItemList";
 import './ItemListContainer.css';
 
+
 function ItemListContainer({ greeting }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
