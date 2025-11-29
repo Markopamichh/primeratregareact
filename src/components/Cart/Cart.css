@@ -1,4 +1,3 @@
-/* Estilos para Cart */
 .cart-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -143,7 +142,6 @@
   text-decoration: underline;
 }
 
-/* Carrito vacío */
 .cart-empty {
   display: flex;
   flex-direction: column;
@@ -184,6 +182,36 @@
 
 .cart-empty-link:hover {
   background-color: var(--color-primary-hover);
+}
+
+.error-message {
+  background-color: #fee2e2;
+  border: 1px solid var(--color-danger);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message p {
+  color: var(--color-danger);
+  margin: 0;
+  font-size: var(--font-size-base);
+}
+
+.error-message button {
+  background-color: transparent;
+  color: var(--color-danger);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.error-message button:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 992px) {

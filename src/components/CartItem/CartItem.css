@@ -1,4 +1,4 @@
-/* Estilos para CartItem */
+
 .cart-item {
   display: grid;
   grid-template-columns: 100px 1fr auto auto auto;

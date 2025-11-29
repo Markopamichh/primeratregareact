@@ -1,38 +1,38 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
 
 function NavBar() {
     return (
         <nav className="navbar">
-            <Link to="/" className="navbar-logo">
+            <NavLink to="/" className="navbar-logo">
                 TechStore
-            </Link>
+            </NavLink>
             <ul className="navbar-menu">
                 <li>
-                    <Link to="/" className="navbar-link">
+                    <NavLink to="/" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>
                         Inicio
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/category/laptops" className="navbar-link">
+                    <NavLink to="/category/laptops" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>
                         Laptops
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/category/accesorios" className="navbar-link">
+                    <NavLink to="/category/accesorios" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>
                         Accesorios
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/category/monitores" className="navbar-link">
+                    <NavLink to="/category/monitores" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>
                         Monitores
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/category/audio" className="navbar-link">
+                    <NavLink to="/category/audio" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>
                         Audio
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
                     <CartWidget />
